@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Another wonderful app created from an online course taught by instructor Stephen Grider.
+
 ## Available Scripts
 
 In the project directory, you can run:
