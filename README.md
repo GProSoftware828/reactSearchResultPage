@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Built studying course Modern React with Redux instructed by Stephen Grider.
+
 ## Available Scripts
 
 In the project directory, you can run:
