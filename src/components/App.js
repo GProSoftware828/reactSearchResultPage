@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import unsplash from '../api/unsplash';
 import SearchBar from './SearchBar';
 import ImageList from './ImageList';
@@ -6,9 +7,9 @@ import ImageList from './ImageList';
 
 class App extends React.Component {
   state = { images: [] };
-
+//Constructor:
   onSearchSubmit = async term => {
-
+//Set the state to the response:
     const response = await unsplash.get('/search/photos', {
       params: { query: term },
       headers: {
@@ -17,7 +18,6 @@ class App extends React.Component {
       }
     });
     this.setState({ images: response.data.results });
-
   }
 
   //Submit is a made-up variable (callback) defined inside the class tag:
@@ -32,3 +32,8 @@ class App extends React.Component {
 };
 
 export default App;
+
+ReactDOM.render(
+  <App />,
+  document.querySelector('#root')
+);
